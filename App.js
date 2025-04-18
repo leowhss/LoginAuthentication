@@ -6,6 +6,7 @@ import HomeScreen from './components/HomeScreen';
 import LoginScreen from './components/LoginScreen';
 import ProfileScreen from './components/ProfileScreen';
 import ProtectedScreen from './components/ProtectedScreen';
+import UserOnly from './components/UserOnly';
 
 const Drawer = createDrawerNavigator();
 
@@ -18,6 +19,7 @@ function App() {
           <Drawer.Screen name="Login" component={LoginScreen} />
           <Drawer.Screen name="Profile" component={ProfileScreen} />
           <Drawer.Screen name="Protected" component={ProtectedScreen} />
+          <Drawer.Screen name="UserOnly" component={UserOnly} />
         </Drawer.Navigator>
       </NavigationContainer>
     </AuthProvider>
